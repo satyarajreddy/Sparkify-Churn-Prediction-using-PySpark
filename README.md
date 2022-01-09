@@ -7,14 +7,13 @@
 
 ## **Problem Statement**
 - It is our task to classify users who are at risk to churn, either downgrade from premium to free tier or cancelling their service altogether. Users can upgrade, downgrade, or cancel their service at any time. If we can accurately classify vulnerable users before they leave (i.e., classifying “true positives”), Sparkify can offer them discounts and incentives, potentially saving the business millions in revenue. 
-- However, we should avoid falsely predicting churn for active users who would stay loyal anyway (i.e., avoid classifying “false positives”), because discounts and incentives are expensive.
+- In this case we are going to predict potential churner subscribers. If Sparkify detects the subscriber who will be churner, they can take actions to labeled subscribers like discount, no ads and so on.
 
 <img src="https://user-images.githubusercontent.com/16171971/148663848-43038e6f-b422-45e9-927a-9679d557141d.png" width=50% height=50%>
 
 ## **Data Source(s)**
-- Provided by Udacity
-- 6GB, medium size dataset is used in this project
-- https://drive.google.com/file/d/16EtjE2Fmo0j8aRPUbIacJT0B-47BIQ63/view?usp=sharing
+- Data Lineage: We have used data provided by Udacity. There are 3 versions of the dataset: a small cluster of 128 MB, a medium size of data of about 6 GB and complete data of 12 GB. We have used the medium sized data in this Spark notebook to perform explanatory data analysis and implement the appropriate models.
+- The data can be downloaded from the below web source link: https://video.udacity-data.com/topher/2018/December/5c1d6681_medium-sparkify-event-data/medium-sparkify-event-data.json
 
 ## **Data Exploration and Preprocessing**
 
