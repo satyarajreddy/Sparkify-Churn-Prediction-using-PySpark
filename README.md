@@ -16,3 +16,72 @@
 - 6GB, medium size dataset is used in this project
 - https://drive.google.com/file/d/16EtjE2Fmo0j8aRPUbIacJT0B-47BIQ63/view?usp=sharing
 
+## **Data Exploration and Preprocessing**
+
+**Number of rows: 543,000**
+
+**The 18 features are:**
+- Artist — which has 17656 unique artists in it
+- Auth — authentication level
+- firstName — first name of the user
+- gender — gender of the user
+- itemInSession — log count in a session
+- length — length of the song played (in seconds)
+- location — user location
+- method — GET or PUT HTTP request method
+- page — page with which user is currently interacting
+- registration — timestamp of user’s registration
+- sessionId — session of the log
+- song — song played by user
+- status — HTTP code of status — 200, 307, 404
+- ts — timestamp of a given interaction
+- userAgent — what user used as streaming service (Mac/Linux/Windows/iPhone/etc.)
+- userId — unique id of the user
+- Auth — authentication level
+- firstName — first name of the user
+
+## **Data Cleaning & Transformation**
+- **StringIndexing – using StringIndexer()**
+- **OneHotEncoding – using OneHotEncoder()**
+- **Dropna(): Dropping the unnecessary columns from the dataset**
+
+## **Data Visualizations**
+
+**OS & Browser Distribution**
+
+<img src="https://user-images.githubusercontent.com/16171971/148664944-46dcd301-bfbf-4a55-a7f9-d5596a95b2bb.png" width=50% height=50%>
+
+
+**Gender Distribution**
+
+<img src="https://user-images.githubusercontent.com/16171971/148665133-16fc2580-a2df-4af1-b720-1f5f6af025a0.png" width=50% height=50%>
+
+
+**Location**
+
+<img src="https://user-images.githubusercontent.com/16171971/148665157-be9483e4-d60a-40f4-98aa-0ae3010129cf.png" width=50% height=50%>
+
+
+## **Modelling**
+### *The below models were developed:*
+- Random Forest Classifier
+- Logistic Regression
+- GBT Classifier
+- Naive Bayes 
+
+**Model Results**
+
+<img src="https://user-images.githubusercontent.com/16171971/148665369-9c04e46f-7975-4d1b-a2b7-15e6d987d406.png" width=50% height=50%>
+
+<img src="https://user-images.githubusercontent.com/16171971/148665378-68445875-a5d9-40d8-80dc-a00128452e69.png" width=50% height=50%>
+
+
+## **Conclusion**
+- **GBTClassifier Churn Prediction model** can help Sparkify to identify approx. 98% of the users who would churn.
+- **F1 Score: ~98.92%**
+- **Accuracy: ~98.93%**
+- The company can use special promotions or other measures to prevent them from cancelling the service.
+
+## **Future Work**
+- Try other models such as **XGBoost, LightGBM** to obtain more precise results.
+- Ensembling approaches to train several classifiers and combining their predictions.
